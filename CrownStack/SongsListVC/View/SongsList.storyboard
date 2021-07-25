@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Songs ListVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SongsListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SongsListVC" customModule="CrownStack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DI1-Qa-c7g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SONGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWP-gg-BkN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.65844716457341679" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YWP-gg-BkN" secondAttribute="trailing" id="7CK-5e-GsF"/>
+                                    <constraint firstAttribute="bottom" secondItem="YWP-gg-BkN" secondAttribute="bottom" id="Jjl-vj-EzJ"/>
+                                    <constraint firstItem="YWP-gg-BkN" firstAttribute="top" secondItem="DI1-Qa-c7g" secondAttribute="top" id="NGY-ib-Sos"/>
+                                    <constraint firstItem="YWP-gg-BkN" firstAttribute="leading" secondItem="DI1-Qa-c7g" secondAttribute="leading" id="UiA-75-Fkb"/>
+                                    <constraint firstAttribute="height" constant="60" id="vgK-qJ-sZT"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dqd-pk-3is">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.94509803920000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.94509803920000002" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dqd-pk-3is" secondAttribute="trailing" id="77e-RW-lfz"/>
+                            <constraint firstItem="Dqd-pk-3is" firstAttribute="top" secondItem="DI1-Qa-c7g" secondAttribute="bottom" id="Ard-dI-Vnb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Dqd-pk-3is" secondAttribute="bottom" id="Ras-3C-XCz"/>
+                            <constraint firstItem="DI1-Qa-c7g" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Yn0-Sj-jHF"/>
+                            <constraint firstItem="Dqd-pk-3is" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aD0-jD-WwI"/>
+                            <constraint firstItem="DI1-Qa-c7g" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="e3n-mb-MmI"/>
+                            <constraint firstItem="DI1-Qa-c7g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uU1-fv-J82"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Dqd-pk-3is" id="T2g-Ow-Xln"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+</document>
